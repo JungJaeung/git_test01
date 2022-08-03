@@ -12,3 +12,37 @@ Github 용어 정리
 10.checkout : 체크아웃으로 원하는 지점으로 파일을 되돌릴수 있음
 11.push : local 저장소의 커밋을 원격저장소 올리는 작업
 12. pull : 원격저장소의 커밋을 로컬 저장소로 내려받는 작업
+
+<깃허브 사용하는 단계>
+[1단계.] 로컬 저장소 작업
+1. 커밋 파일을 저장할 폴더 생성
+2.해당 폴더를 git으로 관리하도록 설정
+-폴더 선택 오른쪽 마우스 : Git bash here
+-git bash화면에서 명령 : git init  -> 깃에서 커밋파일을 관리하는 폴더
+
+<-깃허브와의 연결을 위한 환경 설정 명령 2개>
+git config --global user.email "hello.git.jk3576350@naver.com" 가입할때 썼던 본인이메일을 입력
+git config --global user.name "JungJaeung" 본인 닉네임 입력
+
+<커밋 생성 명령>
+git add README.txt -> 커밋에 파일을 추가
+git commit -m "부연 설명"
+
+<기록 확인>
+git log->모든 커밋을 확인
+git checkout [commit번호 앞 7자리] -> 해당아이디의 커밋으로 버전이동 (아이디는 앞 4자리부터 가능하나, 암묵적으로 7자리를 사용한다.)
+git checkout -     (가장 최근으로 버전이동)
+
+[2단계.] 원격 저장소 작업
+1. 깃허브에 새로운 repository를 생성
+2. 깃에서 원격 저장소를 입력하여 연결
+-git remote add origin https://github.com/(닉네임)아이디/로컬장소명.git
+3. 깃에서 커밋을 원격저장소를 푸쉬함.
+-git push origin master
+
+[3단계] 원격 저장소 작업 - pull작업
+1. 내 컴퓨터의 커밋 폴더 생성, 해당 폴더의 깃으로 관리할 수 있도록 설정
+-폴더 오른쪽 마우스, Git Bash Here
+2. 원격 저장소에서 웹 url을 복사한다.
+3. 저장할 커밋 폴더를 연결한 깃에서 다음 명령을 입력한다.
+-get clone (해당 repository url을 붙여넣기) -> 반드시 맨 끝에서 한 칸 띄우고 .을 찍고 엔터해야 실행
