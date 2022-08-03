@@ -1,0 +1,14 @@
+Github 용어 정리
+1. Github : 깃허브, git으로 관리하는 프로젝트를 올려놓을 수 있는 사이트
+2. Git 깃, 버전 관리 시스템
+3.CLI : Command line Interface, 명령어를 하나씩 입력하여 실행하는 방식
+4.GUI : Graphic User Interface, 마우스로 클릭하여 실행하는 방식
+5.Git bash : Git을 CLI방식으로 사용할 수 있는 환경
+6.로컬 저장소 : local, Git으로 버전관리하는 내컴퓨터 안의 폴더를 의미
+7.원격 저장소 : Repository, Github에 올려져 있는 프로젝트를 의미
+
+8.commit : 버전 관리를 통해서 생성된 파일, 혹은 버전 관리를 하는 행위.
+9.log 명령어 : 지금까지 만든 모든 commit을 확인
+10.checkout : 체크아웃으로 원하는 지점으로 파일을 되돌릴수 있음
+11.push : local 저장소의 커밋을 원격저장소 올리는 작업
+12. pull : 원격저장소의 커밋을 로컬 저장소로 내려받는 작업
