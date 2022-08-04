@@ -45,4 +45,4 @@ git checkout -     (가장 최근으로 버전이동)
 -폴더 오른쪽 마우스, Git Bash Here
 2. 원격 저장소에서 웹 url을 복사한다.
 3. 저장할 커밋 폴더를 연결한 깃에서 다음 명령을 입력한다.
--get clone (해당 repository url을 붙여넣기) -> 반드시 맨 끝에서 한 칸 띄우고 .을 찍고 엔터해야 실행
+-git clone (해당 repository url을 붙여넣기) -> 반드시 맨 끝에서 한 칸 띄우고 .을 찍고 엔터해야 실행
